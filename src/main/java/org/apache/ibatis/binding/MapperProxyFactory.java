@@ -24,6 +24,7 @@ import org.apache.ibatis.binding.MapperProxy.MapperMethodInvoker;
 import org.apache.ibatis.session.SqlSession;
 
 /**
+ * 每个mapper都会有对应的
  * @author Lasse Voss
  */
 public class MapperProxyFactory<T> {

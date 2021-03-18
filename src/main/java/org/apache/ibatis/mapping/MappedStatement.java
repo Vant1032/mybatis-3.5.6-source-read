@@ -35,6 +35,11 @@ public final class MappedStatement {
 
   private String resource;
   private Configuration configuration;
+
+  /**
+   * 即：完整方法名（包括包、类名）
+   * mapperInterface.getName() + "." + methodName
+   */
   private String id;
   private Integer fetchSize;
   private Integer timeout;
@@ -87,6 +92,9 @@ public final class MappedStatement {
       return this;
     }
 
+    /**
+     * <p> mapperInterface.getName() + "." + methodName。</p>
+     */
     public String id() {
       return mappedStatement.id;
     }

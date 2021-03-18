@@ -18,11 +18,13 @@ package org.apache.ibatis.reflection;
 import org.apache.ibatis.io.Resources;
 
 /**
+ * 检测jdk中是否存在这些类
  * To check the existence of version dependent classes.
  */
 public class Jdk {
 
   /**
+   * 由于Mybatis要使用parameter的名称，所以需要判断是否存在这个类，利用这个类获取方法参数名称。
    * <code>true</code> if <code>java.lang.reflect.Parameter</code> is available.
    * @deprecated Since 3.5.0, Will remove this field at feature(next major version up)
    */

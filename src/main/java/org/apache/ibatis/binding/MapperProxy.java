@@ -30,6 +30,8 @@ import org.apache.ibatis.reflection.ExceptionUtil;
 import org.apache.ibatis.session.SqlSession;
 
 /**
+ * 实现了InvokationHandler接口的类，实现Invoke方法，从而可以创建代理类来对各种方法调用进行处理。每个mapper都会有对应的。
+ * 其创建代理时，会进行缓存（methodCache）
  * @author Clinton Begin
  * @author Eduardo Macarron
  */

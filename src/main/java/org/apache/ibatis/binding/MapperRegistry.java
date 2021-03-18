@@ -27,6 +27,7 @@ import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.session.SqlSession;
 
 /**
+ * Mapper注册的地方，这里会对mapper获取进行缓存
  * @author Clinton Begin
  * @author Eduardo Macarron
  * @author Lasse Voss

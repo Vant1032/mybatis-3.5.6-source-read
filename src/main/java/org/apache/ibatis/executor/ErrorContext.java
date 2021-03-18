@@ -15,7 +15,9 @@
  */
 package org.apache.ibatis.executor;
 
+
 /**
+ * 用于生成异常，并提供了更为详细的异常信息
  * @author Clinton Begin
  */
 public class ErrorContext {

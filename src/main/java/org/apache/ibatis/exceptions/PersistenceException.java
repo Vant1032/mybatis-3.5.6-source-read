@@ -16,6 +16,7 @@
 package org.apache.ibatis.exceptions;
 
 /**
+ * 这个类作为Mybatis中自定义层级最高的类（IbatisException被废弃了），
  * @author Clinton Begin
  */
 @SuppressWarnings("deprecation")

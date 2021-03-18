@@ -39,6 +39,7 @@ import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
 
 /**
+ * 一个重要的核心类，利用这个类可以对某个Mapper的某个方法执行对应的sql操作
  * @author Clinton Begin
  * @author Eduardo Macarron
  * @author Lasse Voss
@@ -216,6 +217,9 @@ public class MapperMethod {
 
   }
 
+  /**
+   * 封装了Sql的全方法名（mapperInterface.getName() + "." + methodName）和类型
+   */
   public static class SqlCommand {
 
     private final String name;
